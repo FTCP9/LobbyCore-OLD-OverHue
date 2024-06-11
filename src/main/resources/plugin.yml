@@ -1,0 +1,23 @@
+name: OverHue-LOBBY
+version: '${project.version}'
+main: eu.overhue.lobby.Core
+api-version: 1.19
+authors: [OverHue-Developers]
+website: overhue.eu
+loadbefore: [Multiverse-Core-4.3.1]
+commands:
+  setSpawn:
+    description: Sets the server spawn to players to teleport there
+    usage: /setSpawn
+    permission: spawn.set
+  spawn:
+    description: teleports you to the servers spawn
+    usage: /spawn
+  zlreload:
+    description: reloads the configs of the plugin
+    usage: "Usage: /zlreload"
+    permission: zenithialobby.reaload
+    permission-message: &cYou are not allowed to execute this command without zenithialobby.reload permission!
+  vanish:
+    description: sets you invisible to players
+    usage: /vanish
